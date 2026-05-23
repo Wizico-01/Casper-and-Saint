@@ -22,9 +22,11 @@
   overflow: hidden;
   transition: all var(--duration-mid) var(--ease-out);
   cursor: default;
+  /* Fix text overflow on mobile */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-/* Bottom border accent on hover */
 .service-card::after {
   content: '';
   position: absolute;
@@ -91,12 +93,16 @@
   color: var(--navy);
   margin-bottom: var(--space-sm);
   line-height: 1.4;
+  /* Prevent text from getting cut off */
+  white-space: normal;
+  word-break: normal;
 }
 
 .service-card p {
   font-size: 0.85rem;
   color: var(--text-muted);
   line-height: 1.7;
+  white-space: normal;
 }
 
 /* CTA */
@@ -104,7 +110,7 @@
   text-align: center;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== TABLET ===== */
 @media (max-width: 1024px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -114,11 +120,24 @@
   }
 }
 
-@media (max-width: 600px) {
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .service-card {
+    padding: 1.5rem;
   }
   .service-card--wide {
+    grid-column: 1 / -1;
     flex-direction: column;
+    padding: 1.5rem;
+  }
+  .service-card h4 {
+    font-size: 0.9rem;
+  }
+  .service-card p {
+    font-size: 0.9rem;
   }
 }

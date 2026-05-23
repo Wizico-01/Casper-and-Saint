@@ -25,7 +25,22 @@
     .page-hero .section-title { color: var(--white); }
     .page-hero p { color: rgba(255,255,255,0.65); margin: 0 auto; max-width: 580px; }
     .all-services { padding: var(--space-3xl) 0; background: var(--off-white); }
-    .all-services .services-grid { grid-template-columns: repeat(3,1fr); margin-bottom:0; }
+    .all-services .services-grid { 
+  grid-template-columns: repeat(3, 1fr); 
+  margin-bottom: 0; 
+}
+
+@media (max-width: 1024px) {
+  .all-services .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .all-services .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
     .breadcrumb { font-size:0.75rem; color:rgba(255,255,255,0.4); margin-bottom:1rem; }
     .breadcrumb a { color: var(--gold); }
     .breadcrumb a:hover { color: var(--gold-light); }
@@ -58,7 +73,7 @@
       <div class="breadcrumb"><a href="../index.html">Home</a> / Services</div>
       <div class="section-label">What We Offer</div>
       <h1 class="section-title" style="margin:0.5rem 0 1rem;">All Services</h1>
-      <p>Technology-enhanced security solutions tailored to every risk profile — from physical guarding to enterprise intelligence.</p>
+      <p>Technology-enhanced security solutions tailored to every risk profile, from physical guarding to enterprise intelligence.</p>
     </div>
   </div>
 
