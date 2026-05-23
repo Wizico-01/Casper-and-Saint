@@ -1,0 +1,124 @@
+/* =============================================
+   SERVICES.CSS — Casper and Saint
+   ============================================= */
+
+.services {
+  background: var(--off-white);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.service-card {
+  background: var(--white);
+  border: 1px solid var(--light-grey);
+  padding: var(--space-xl) var(--space-lg);
+  border-radius: var(--radius-md);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--duration-mid) var(--ease-out);
+  cursor: default;
+}
+
+/* Bottom border accent on hover */
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--navy), var(--blue-light));
+  transition: width var(--duration-slow) var(--ease-out);
+}
+
+.service-card:hover::after {
+  width: 100%;
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px);
+  border-color: var(--light-grey);
+}
+
+.service-card--wide {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  padding: var(--space-lg) var(--space-xl);
+}
+
+.service-card--wide .sc-icon {
+  flex-shrink: 0;
+}
+
+.service-card--wide h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Icon */
+.sc-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--navy);
+  margin-bottom: var(--space-md);
+  transition: color var(--duration-mid), transform var(--duration-mid);
+}
+
+.service-card:hover .sc-icon {
+  color: var(--blue-light);
+  transform: scale(1.1);
+}
+
+.sc-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Card text */
+.service-card h4 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: var(--space-sm);
+  line-height: 1.4;
+}
+
+.service-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* CTA */
+.services-more {
+  text-align: center;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service-card--wide {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-card--wide {
+    flex-direction: column;
+  }
+}

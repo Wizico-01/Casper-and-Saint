@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Casper and Saint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/services.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <style>
+    .page-hero {
+      background: linear-gradient(155deg, #0D1B3E 0%, #122256 60%, #1A3378 100%);
+      padding: calc(var(--nav-height) + 4rem) var(--container-pad) 4rem;
+      text-align: center;
+    }
+    .page-hero .section-label { color: var(--gold); }
+    .page-hero .section-title { color: var(--white); }
+    .page-hero p { color: rgba(255,255,255,0.65); margin: 0 auto; max-width: 580px; }
+    .all-services { padding: var(--space-3xl) 0; background: var(--off-white); }
+    .all-services .services-grid { grid-template-columns: repeat(3,1fr); margin-bottom:0; }
+    .breadcrumb { font-size:0.75rem; color:rgba(255,255,255,0.4); margin-bottom:1rem; }
+    .breadcrumb a { color: var(--gold); }
+    .breadcrumb a:hover { color: var(--gold-light); }
+    .back-link { display:inline-flex; align-items:center; gap:0.5rem; font-size:0.8rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--navy); margin-top:var(--space-xl); }
+    .back-link:hover { color:var(--blue-light); }
+  </style>
+</head>
+<body>
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <img src="../images/logo.png" alt="Casper and Saint" class="logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="../index.html#technology" class="nav-link">Technology</a></li>
+        <li><a href="../index.html#values" class="nav-link">Values</a></li>
+        <li><a href="../index.html#training" class="nav-link">Training</a></li>
+        <li><a href="../index.html#contact" class="nav-link nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Services</div>
+      <div class="section-label">What We Offer</div>
+      <h1 class="section-title" style="margin:0.5rem 0 1rem;">All Services</h1>
+      <p>Technology-enhanced security solutions tailored to every risk profile — from physical guarding to enterprise intelligence.</p>
+    </div>
+  </div>
+
+  <section class="all-services">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><path d="M25 3L45 12V25C45 37 36 47 25 50C14 47 5 37 5 25V12Z" stroke="currentColor" stroke-width="2"/><path d="M18 25L23 30L33 20" stroke="currentColor" stroke-width="2.5"/></svg></div>
+          <h4>Armed Guarding &amp; Escort Duties</h4>
+          <p>Professional armed security personnel for premises protection and high-value escort missions across Nigeria.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><circle cx="25" cy="20" r="8" stroke="currentColor" stroke-width="2"/><path d="M10 45C10 36 17 30 25 30C33 30 40 36 40 45" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>Journey Management</h4>
+          <p>End-to-end route planning, risk assessment, and vehicle escort for safe personnel movement in high-risk environments.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><rect x="8" y="15" width="34" height="22" rx="3" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="26" r="4" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>Business Assurance Officers</h4>
+          <p>Dedicated security officers trained in corporate environments to ensure business continuity and workplace safety.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><path d="M10 25C10 17 17 10 25 10C33 10 40 17 40 25" stroke="currentColor" stroke-width="2"/><path d="M25 10V5M10 25H5M40 25H45" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>Close Protection Services</h4>
+          <p>Executive and VIP protection by trained close-protection officers with threat assessment and counter-surveillance expertise.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><circle cx="25" cy="18" r="8" stroke="currentColor" stroke-width="2"/><path d="M8 48C8 38 15 32 25 32C35 32 42 38 42 48" stroke="currentColor" stroke-width="2"/><path d="M35 22L43 15M35 30L43 30" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>Guard / Sniffer Dogs &amp; Handlers</h4>
+          <p>Certified K9 units and handlers for explosives detection, drug interdiction, and perimeter security operations.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><rect x="5" y="12" width="26" height="18" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="21" r="4" stroke="currentColor" stroke-width="2"/><path d="M35 15L45 10V35L35 30" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>Access Control &amp; Patrolling</h4>
+          <p>Electronic access management systems combined with structured patrol schedules for total perimeter integrity.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="18" stroke="currentColor" stroke-width="2"/><path d="M25 14V25L32 30" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>Alarm Response</h4>
+          <p>Rapid-reaction alarm response teams dispatched within minutes to investigate and neutralise security alerts.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><rect x="5" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2"/><circle cx="15" cy="22" r="5" stroke="currentColor" stroke-width="2"/><circle cx="35" cy="22" r="5" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>CCTV Monitoring &amp; Installation</h4>
+          <p>Full-service CCTV system design, professional installation, and round-the-clock remote monitoring with AI video analytics.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><path d="M5 35L18 25L28 30L45 15" stroke="currentColor" stroke-width="2"/><path d="M5 42H45" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>Maritime Security Advisory &amp; Liaison</h4>
+          <p>Specialist offshore and port security services, working alongside naval authorities to protect maritime assets.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><rect x="8" y="18" width="34" height="20" rx="3" stroke="currentColor" stroke-width="2"/><path d="M18 18V12C18 9 22 7 25 7C28 7 32 9 32 12V18" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>Freight Logistics &amp; Security</h4>
+          <p>Secure cargo escort, logistics risk assessment, and freight protection across road and maritime corridors.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="10" stroke="currentColor" stroke-width="2"/><path d="M25 5V15M25 35V45M5 25H15M35 25H45" stroke="currentColor" stroke-width="2"/><circle cx="25" cy="25" r="3" fill="currentColor"/></svg></div>
+          <h4>Bouncers, Bodyguards &amp; Traffic Marshals</h4>
+          <p>Trained crowd management specialists for events, nightlife venues, and vehicular traffic control operations.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="18" stroke="currentColor" stroke-width="2"/><path d="M20 15L30 25L20 35" stroke="currentColor" stroke-width="2.5"/></svg></div>
+          <h4>Anti-Bomb Squad (EOD / CBRN)</h4>
+          <p>Explosive ordnance disposal and Chemical, Biological, Radiological, and Nuclear response for high-risk environments.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><path d="M10 30H40V42H10Z" stroke="currentColor" stroke-width="2"/><path d="M25 8L30 18H20L25 8Z" stroke="currentColor" stroke-width="2"/><line x1="25" y1="18" x2="25" y2="30" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>Medical Response Team</h4>
+          <p>Trained first-responders embedded within security deployments for immediate medical emergency management.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><circle cx="25" cy="25" r="18" stroke="currentColor" stroke-width="2"/><path d="M16 25H34M25 16V34" stroke="currentColor" stroke-width="2.5"/></svg></div>
+          <h4>Event Site Safety &amp; Security Audit</h4>
+          <p>Pre-event risk advisory, on-site safety audit, and comprehensive security planning for any scale of event.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><circle cx="17" cy="18" r="7" stroke="currentColor" stroke-width="2"/><circle cx="33" cy="18" r="7" stroke="currentColor" stroke-width="2"/><path d="M5 44C5 36 10 30 17 30H33C40 30 45 36 45 44" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h4>Crowd Control &amp; Access Management</h4>
+          <p>Systematic crowd flow management, access point control, and emergency evacuation coordination for large venues.</p>
+        </div>
+        <div class="service-card reveal service-card--wide">
+          <div class="sc-icon"><svg viewBox="0 0 50 50" fill="none"><path d="M25 3L45 14V28L25 47L5 28V14Z" stroke="currentColor" stroke-width="2"/></svg></div>
+          <div>
+            <h4>Risk Assessment for Concerts, Conferences &amp; Corporate Events</h4>
+            <p>Thorough threat and vulnerability assessments to identify risks before your event, backed by detailed security planning and trained deployment teams.</p>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:var(--space-xl);">
+        <a href="../index.html#contact" class="btn btn-primary">Request a Security Consultation</a>
+        <br/>
+        <a href="../index.html" class="back-link" style="margin-top:1.5rem;">← Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding:var(--space-xl) 0; border-top:1px solid rgba(255,255,255,0.1);">
+        <p>&copy; <span id="footerYear"></span> Casper and Saint Ltd. All rights reserved. | Nigeria | Africa</p>
+        <p>info@casperandsaints.com | www.casperandsaints.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>

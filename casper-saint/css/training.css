@@ -1,0 +1,104 @@
+/* =============================================
+   TRAINING.CSS — Casper and Saint
+   ============================================= */
+
+.training {
+  background: var(--off-white);
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+/* Left content */
+.training-content .section-title {
+  margin-bottom: var(--space-md);
+}
+
+.training-content p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+  line-height: 1.8;
+}
+
+.training-tagline {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+  color: var(--navy);
+  border-left: 3px solid var(--gold);
+  padding-left: var(--space-md);
+  margin-top: var(--space-lg);
+  line-height: 1.4;
+}
+
+/* Right courses */
+.training-courses h3 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mid-grey);
+  margin-bottom: var(--space-lg);
+}
+
+.course-item {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--light-grey);
+  transition: padding-left var(--duration-mid) var(--ease-out);
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+.course-item:hover {
+  padding-left: 0.5rem;
+}
+
+.course-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--navy);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  transition: color var(--duration-mid);
+}
+
+.course-item:hover .course-icon {
+  color: var(--gold);
+}
+
+.course-icon svg { width: 100%; height: 100%; }
+
+.course-item h4 {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.course-item p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .training-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+}
